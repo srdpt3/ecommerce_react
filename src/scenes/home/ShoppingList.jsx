@@ -31,30 +31,28 @@ const ShoppingList = () => {
   useEffect(() => {
     getItems();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
-  console.log("ASdfSA" + items);
 
   const CartierItems = items.filter(
     (item) => item.attributes.category === "Cartier"
   );
-  // console.log("CartierItems", CartierItems);
-  // const BoucheronItems = items.filter(
-  //   (item) => item.attributes.category === "Boucheron"
-  // );
-  // const vanItems = items.filter(
-  //   (item) => item.attributes.category === "Van C&A"
-  // );
+  const BoucheronItems = items.filter(
+    (item) => item.attributes.category === "Boucheron"
+  );
+  const vanItems = items.filter(
+    (item) => item.attributes.category === "Van C&A"
+  );
 
-  // const GraffItems = items.filter(
-  //   (item) => item.attributes.category === "Graff"
-  // );
+  const GraffItems = items.filter(
+    (item) => item.attributes.category === "Graff"
+  );
 
-  // const TiffanyItems = items.filter(
-  //   (item) => item.attributes.category === "Tiffany & Co"
-  // );
+  const TiffanyItems = items.filter(
+    (item) => item.attributes.category === "Tiffany & Co"
+  );
 
-  // const PiagetItems = items.filter(
-  //   (item) => item.attributes.category === "Piaget"
-  // );
+  const PiagetItems = items.filter(
+    (item) => item.attributes.category === "Piaget"
+  );
 
   return (
     <Box width="80%" margin="80px auto">
@@ -69,7 +67,7 @@ const ShoppingList = () => {
         centered
         TabIndicatorProps={{ sx: { display: breakPoint ? "block" : "none" } }}
         sx={{
-          m: "25px",
+          m: "10px",
           "& .MuiTabs-flexContainer": {
             flexWrap: "wrap",
           },
@@ -100,11 +98,11 @@ const ShoppingList = () => {
           CartierItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
-        {/* {value === "Van C&A" &&
+        {value === "Van C&A" &&
           vanItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
-          ))} */}
-        {/* {value === "Boucheron" &&
+          ))}
+        {value === "Boucheron" &&
           BoucheronItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
@@ -122,7 +120,7 @@ const ShoppingList = () => {
         {value === "Tiffany & Co" &&
           TiffanyItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
-          ))} */}
+          ))}
       </Box>
     </Box>
   );

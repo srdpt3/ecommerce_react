@@ -42,7 +42,7 @@ const NavBar = () => {
           sx={{ "&:hover": { cursor: "pointer" } }}
           color={shades.secondary[500]}
         >
-          Wedding Band
+          Yunjimi
         </Box>
         <Box
           display="flex"

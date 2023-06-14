@@ -56,8 +56,8 @@ const ItemDetail = () => {
         <Box flex="1 1 40%" mb="40px">
           <img
             alt={item?.name}
-            width="100%"
-            height="100%"
+            width="105%"
+            height="105%"
             src={`https://weddingband.herokuapp.com${item?.attributes?.image?.data?.attributes?.url}`}
             style={{ objectFit: "contain" }}
           />
