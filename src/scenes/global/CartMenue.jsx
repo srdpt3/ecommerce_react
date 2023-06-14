@@ -146,7 +146,9 @@ const CartMenue = () => {
                 navigate("/checkout");
                 dispatch(setIsCartOpen({}));
               }}
-            ></Button>
+            >
+              Checkout
+            </Button>
           </Box>
         </Box>
       </Box>
