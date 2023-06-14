@@ -5,7 +5,6 @@ import {
   ShoppingBagOutlined,
   MenuOutlined,
   SearchOutlined,
-  MenuOpenOutlined,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { shades } from "../../theme";
@@ -79,7 +78,7 @@ const NavBar = () => {
             }}
           ></Badge>
           <IconButton sx={{ color: "black" }}>
-            <MenuOpenOutlined />
+            <MenuOutlined />
           </IconButton>
         </Box>
       </Box>
